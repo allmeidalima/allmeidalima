@@ -21,7 +21,5 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
-      - run: npm publish
-        if: github.event_name == 'push'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
